@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- Primary Meta Tags -->
+  <title>Birthday Invitation - Third Birthday Celebration</title>
+  <meta name="title" content="Birthday Invitation - Third Birthday Celebration">
+  <meta name="description" content="Join us for a magical third birthday celebration">
+  <meta name="keywords" content="birthday, invitation, celebration, party">
+  <meta name="author" content="Birthday Invitation">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Birthday Invitation - Third Birthday Celebration">
+  <meta property="og:description" content="Join us for a magical third birthday celebration">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Birthday Invitation - Third Birthday Celebration">
+  <meta property="twitter:description" content="Join us for a magical third birthday celebration">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Dancing+Script:wght@400;500;600;700&family=Lora:wght@400;500;600;700&family=Fredoka:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        screens: {
+          'xs': '375px',
+          'sm': '640px',
+          'md': '768px',
+          'lg': '1024px',
+          'xl': '1280px',
+          '2xl': '1536px',
+        },
+        extend: {
+          colors: {
+            'beige': '#F5F0E8',
+            'dark-blue': '#1A1F3A',
+            'red-brown': '#8B4513',
+            'muted-green': '#6B8E6B',
+            'teal': '#4A9B9B',
+            'soft-pink': '#D4A5A5',
+            'gold': '#D4AF37',
+            'light-grey': '#E8E8E8',
+          },
+          fontFamily: {
+            'serif': ['Playfair Display', 'serif'],
+            'script': ['Dancing Script', 'cursive'],
+            'sans': ['Lora', 'serif'],
+          },
+        },
+      },
+    }
+  </script>
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <main class="w-full overflow-x-hidden bg-beige" role="main">
+    <!-- Floating Balloons Background -->
+    <div class="fixed inset-0 pointer-events-none overflow-hidden z-0" id="balloons-container" aria-hidden="true"></div>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex flex-col items-center justify-center px-3 sm:px-4 py-6 sm:py-8 relative bg-beige z-10" aria-labelledby="hero-title">
+      <div class="relative z-10 text-center w-full max-w-4xl mx-auto">
+        <div class="fade-in mb-6 sm:mb-8">
+          <h1 id="hero-title" class="text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-dark-blue font-script drop-shadow-lg px-2">
+            She's Turning 3! 🎉
+          </h1>
+        </div>
+        <div class="fade-in" style="transition-delay: 0.2s;">
+          <p class="text-lg sm:text-xl md:text-2xl lg:text-3xl text-red-brown font-serif px-4">
+            Join us for a magical celebration
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Invitation Card Section -->
+    <section class="h-[150vh] sm:h-[170vh] md:h-[180vh] lg:h-[200vh] flex items-center justify-center px-3 sm:px-4 py-8 sm:py-12 relative z-10 bg-beige" id="invitation-section" style="perspective: 1200px; perspective-origin: center center;" aria-labelledby="invitation-title">
+      <div class="relative w-full max-w-[90%] xs:max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl card-3d" id="invitation-card">
+        <!-- Dynamic shadow -->
+        <div class="absolute inset-0 bg-black/25 blur-3xl rounded-3xl -z-10" id="card-shadow" aria-hidden="true"></div>
+        
+        <div class="relative w-full rounded-xl sm:rounded-2xl shadow-[0_15px_50px_-10px_rgba(0,0,0,0.3)] sm:shadow-[0_25px_70px_-10px_rgba(0,0,0,0.4)] overflow-hidden card-3d">
+          <img
+            src="./Deshna Birthday Invitation.png"
+            alt="Deshna's Birthday Invitation Card"
+            class="w-full h-auto object-contain rounded-xl sm:rounded-2xl"
+            loading="lazy"
+          />
+          
+          <!-- Shine/gloss effect -->
+          <div class="absolute inset-0 bg-gradient-to-br from-white/30 via-transparent to-transparent pointer-events-none rounded-xl sm:rounded-2xl" id="card-shine" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Girl Section -->
+    <section class="min-h-screen flex flex-col items-center justify-center px-3 sm:px-4 py-12 sm:py-16 relative z-10 bg-beige" aria-labelledby="girl-title">
+      <div class="scale-in relative">
+        <div class="absolute inset-0 bg-gradient-to-br from-soft-pink/30 to-teal/30 rounded-full blur-3xl -z-10 scale-150" aria-hidden="true"></div>
+        <div class="relative hover-scale">
+          <img
+            src="./1.png"
+            alt="Birthday Girl - Deshna"
+            class="rounded-full shadow-2xl w-[200px] h-[200px] xs:w-[240px] xs:h-[240px] sm:w-[280px] sm:h-[280px] md:w-[320px] md:h-[320px] object-cover border-2 sm:border-4 border-dark-blue"
+            loading="lazy"
+          />
+          <!-- Floral crown decoration -->
+          <div class="absolute -top-6 sm:-top-8 left-1/2 transform -translate-x-1/2 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 opacity-70" aria-hidden="true">
+            <svg viewBox="0 0 100 100" class="w-full h-full text-soft-pink" aria-hidden="true">
+              <path d="M50 10 Q45 20 40 25 Q35 30 30 25 Q25 20 20 25 Q15 30 20 35 Q25 40 30 35 Q35 40 40 35 Q45 40 50 35 Q55 40 60 35 Q65 40 70 35 Q75 30 80 35 Q85 30 80 25 Q75 20 70 25 Q65 30 60 25 Q55 20 50 10 Z" fill="currentColor" />
+            </svg>
+          </div>
+          <!-- Sparkle decorations -->
+          <div class="absolute -top-3 sm:-top-4 -right-3 sm:-right-4 text-2xl sm:text-3xl" aria-hidden="true">✨</div>
+          <div class="absolute -bottom-3 sm:-bottom-4 -left-3 sm:-left-4 text-2xl sm:text-3xl" aria-hidden="true">✨</div>
+        </div>
+      </div>
+
+      <h2 id="girl-title" class="fade-in mt-8 sm:mt-12 text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-6xl text-dark-blue font-script text-center drop-shadow-lg px-4" style="transition-delay: 0.2s;">
+         Our Little Princess 
+      </h2>
+      <p class="fade-in mt-4 sm:mt-6 text-xl sm:text-2xl md:text-3xl text-red-brown font-serif text-center px-4" style="transition-delay: 0.4s;">
+        Turning Three! 🎂
+      </p>
+      <p class="fade-in mt-3 sm:mt-4 text-base sm:text-lg md:text-xl text-dark-blue font-serif text-center max-w-2xl px-4" style="transition-delay: 0.6s;">
+        Three years of love, laughter, and precious moments. Join us as we celebrate this magical milestone!
+      </p>
+    </section>
+
+    <!-- Details Section -->
+    <section class="min-h-screen flex flex-col items-center justify-center px-3 sm:px-4 py-12 sm:py-16 relative z-10 bg-beige" aria-labelledby="details-title">
+      <div class="max-w-4xl w-full">
+        <h2 id="details-title" class="fade-in text-3xl xs:text-4xl sm:text-5xl md:text-6xl text-dark-blue font-script mb-10 sm:mb-12 md:mb-16 text-center drop-shadow-lg px-4">
+          🎊 Party Details 🎊
+        </h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 px-2 sm:px-0">
+          <article class="fade-in bg-white/30 backdrop-blur-sm rounded-xl sm:rounded-2xl p-5 sm:p-6 md:p-8 shadow-lg border-2 border-dark-blue/30 hover-lift" style="transition-delay: 0s;">
+            <div class="text-3xl sm:text-4xl md:text-5xl mb-3 sm:mb-4" aria-hidden="true">📅</div>
+            <h3 class="text-lg sm:text-xl md:text-2xl font-serif font-bold text-dark-blue mb-2">Date</h3>
+            <p class="text-sm sm:text-base md:text-lg text-dark-blue font-serif">Monday, 29th of Dec</p>
+          </article>
+          <article class="fade-in bg-white/30 backdrop-blur-sm rounded-xl sm:rounded-2xl p-5 sm:p-6 md:p-8 shadow-lg border-2 border-dark-blue/30 hover-lift" style="transition-delay: 0.2s;">
+            <div class="text-3xl sm:text-4xl md:text-5xl mb-3 sm:mb-4" aria-hidden="true">🕐</div>
+            <h3 class="text-lg sm:text-xl md:text-2xl font-serif font-bold text-dark-blue mb-2">Time</h3>
+            <p class="text-sm sm:text-base md:text-lg text-dark-blue font-serif">2:00 PM - 10:00 PM</p>
+          </article>
+          <article class="fade-in bg-white/30 backdrop-blur-sm rounded-xl sm:rounded-2xl p-5 sm:p-6 md:p-8 shadow-lg border-2 border-dark-blue/30 hover-lift sm:col-span-2 md:col-span-1" style="transition-delay: 0.4s;">
+            <div class="text-3xl sm:text-4xl md:text-5xl mb-3 sm:mb-4" aria-hidden="true">📍</div>
+            <h3 class="text-lg sm:text-xl md:text-2xl font-serif font-bold text-dark-blue mb-2">Location</h3>
+            <p class="text-sm sm:text-base md:text-lg text-dark-blue font-serif">Balaji Garden, Narsingh Ghat, Jaisinghpura, Ujjain – 456001</p>
+          </article>
+        </div>
+
+        <div class="fade-in mt-8 sm:mt-12 bg-white/30 backdrop-blur-sm rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-10 shadow-lg border-2 sm:border-4 border-dark-blue/30 text-center mx-2 sm:mx-0 hover-lift" style="transition-delay: 0.6s;">
+          <p class="text-xl sm:text-2xl md:text-3xl font-script text-dark-blue mb-3 sm:mb-4 px-2">
+            ✨ Join us for a magical celebration! ✨
+          </p>
+          <p class="text-base sm:text-lg md:text-xl font-serif text-dark-blue px-2">
+            We can't wait to celebrate this special milestone with you!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Memories Section -->
+    <section class="min-h-screen py-12 sm:py-16 px-3 sm:px-4 relative z-10 bg-beige" aria-labelledby="memories-title">
+      <div class="max-w-6xl mx-auto">
+        <h2 id="memories-title" class="fade-in text-3xl xs:text-4xl sm:text-5xl md:text-6xl font-script text-dark-blue text-center mb-8 sm:mb-12 md:mb-16 drop-shadow-lg px-4">
+          💝 Our Precious Memories 💝
+        </h2>
+
+        <!-- Birthday Photos Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-12 mb-10 sm:mb-12">
+          <!-- First Birthday - Left -->
+          <article class="slide-left relative">
+            <div class="bg-gradient-to-br from-soft-pink to-white border-2 sm:border-4 border-dark-blue rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-2xl hover-lift">
+              <div class="aspect-square relative mb-3 sm:mb-4 bg-light-grey rounded-lg sm:rounded-xl flex items-center justify-center overflow-hidden">
+                <img
+                  src="./1.png"
+                  alt="First Birthday Celebration"
+                  class="w-full h-full object-cover rounded-lg sm:rounded-xl"
+                  loading="lazy"
+                />
+              </div>
+              <h3 class="text-xl sm:text-2xl md:text-3xl font-serif font-bold text-dark-blue text-center uppercase">
+                🎈 First Birthday
+              </h3>
+              <p class="text-sm sm:text-base text-red-brown font-serif text-center mt-2">A year of joy and wonder</p>
+            </div>
+          </article>
+
+          <!-- Second Birthday - Right -->
+          <article class="slide-right relative">
+            <div class="bg-gradient-to-br from-teal to-white border-2 sm:border-4 border-dark-blue rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-2xl hover-lift">
+              <div class="aspect-square relative mb-3 sm:mb-4 bg-light-grey rounded-lg sm:rounded-xl flex items-center justify-center overflow-hidden">
+                <img
+                  src="./2.png"
+                  alt="Second Birthday Celebration"
+                  class="w-full h-full object-cover rounded-lg sm:rounded-xl"
+                  loading="lazy"
+                />
+              </div>
+              <h3 class="text-xl sm:text-2xl md:text-3xl font-serif font-bold text-dark-blue text-center uppercase">
+                🎈 Second Birthday
+              </h3>
+              <p class="text-sm sm:text-base text-red-brown font-serif text-center mt-2">Growing with love and laughter</p>
+            </div>
+          </article>
+
+          <!-- Third Birthday - Left (Upcoming) -->
+          <article class="scale-in relative md:col-span-2 md:max-w-2xl md:mx-auto">
+            <div class="bg-gradient-to-br from-gold to-white border-2 sm:border-4 border-gold rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-2xl relative hover-lift">
+              <div class="absolute -top-2 sm:-top-3 -right-2 sm:-right-3 bg-gold text-dark-blue px-2 sm:px-3 md:px-4 py-1 sm:py-1.5 md:py-2 rounded-full text-xs sm:text-sm font-serif font-bold">
+                ✨ Upcoming
+              </div>
+              <div class="aspect-square relative mb-3 sm:mb-4 bg-light-grey rounded-lg sm:rounded-xl flex items-center justify-center overflow-hidden">
+                <img
+                  src="./3.jpeg"
+                  alt="Third Birthday Celebration - Upcoming"
+                  class="w-full h-full object-cover rounded-lg sm:rounded-xl"
+                  loading="lazy"
+                />
+              </div>
+              <h3 class="text-xl sm:text-2xl md:text-3xl font-serif font-bold text-dark-blue text-center uppercase">
+                🎉 Third Birthday
+              </h3>
+              <p class="text-sm sm:text-base text-red-brown font-serif text-center mt-2">The celebration continues</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Memory Collection Grid -->
+        <div class="fade-in" style="transition-delay: 0.2s;">
+          <h3 class="text-2xl sm:text-3xl md:text-4xl font-script text-dark-blue text-center mb-8 sm:mb-12 px-4">
+            📸 Memory Collection 📸
+          </h3>
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-4 md:gap-6" role="list">
+            <div class="scale-in relative aspect-square bg-light-grey border-2 sm:border-4 border-dark-blue rounded-lg sm:rounded-xl overflow-hidden shadow-lg flex items-center justify-center cursor-pointer hover-lift" style="transition-delay: 0.1s;" role="listitem">
+              <img
+                src="./1.png"
+                alt="Precious Memory - Deshna"
+                class="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                loading="lazy"
+              />
+            </div>
+            <div class="scale-in relative aspect-square bg-light-grey border-2 sm:border-4 border-dark-blue rounded-lg sm:rounded-xl overflow-hidden shadow-lg flex items-center justify-center cursor-pointer hover-lift" style="transition-delay: 0.2s;" role="listitem">
+              <img
+                src="./2.png"
+                alt="Precious Memory - Deshna"
+                class="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                loading="lazy"
+              />
+            </div>
+            <div class="scale-in relative aspect-square bg-light-grey border-2 sm:border-4 border-dark-blue rounded-lg sm:rounded-xl overflow-hidden shadow-lg flex items-center justify-center cursor-pointer hover-lift" style="transition-delay: 0.3s;" role="listitem">
+              <img
+                src="./3.jpeg"
+                alt="Precious Memory - Deshna"
+                class="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                loading="lazy"
+              />
+            </div>
+            <div class="scale-in relative aspect-square bg-light-grey border-2 sm:border-4 border-dark-blue rounded-lg sm:rounded-xl overflow-hidden shadow-lg flex items-center justify-center cursor-pointer hover-lift" style="transition-delay: 0.4s;" role="listitem">
+              <img
+                src="./4.jpeg"
+                alt="Precious Memory - Deshna"
+                class="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="min-h-screen flex flex-col items-center justify-center px-3 sm:px-4 py-12 sm:py-16 relative z-10 bg-beige" aria-labelledby="location-title">
+      <div class="scale-in text-center mb-8 sm:mb-12 relative z-10 w-full max-w-2xl mx-auto">
+        <h2 id="location-title" class="fade-in text-3xl xs:text-4xl sm:text-5xl md:text-6xl text-dark-blue font-script mb-6 sm:mb-8 drop-shadow-lg px-4">
+          🎉 Join Us! 🎉
+        </h2>
+
+        <p class="fade-in text-lg sm:text-xl md:text-2xl text-red-brown font-serif mb-6 sm:mb-8 px-4" style="transition-delay: 0.2s;">
+          We can't wait to celebrate with you!
+        </p>
+
+        <address class="fade-in bg-white/30 backdrop-blur-sm rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-10 shadow-2xl border-2 sm:border-4 border-dark-blue/30 mb-6 sm:mb-8 not-italic mx-2 sm:mx-0" style="transition-delay: 0.4s;">
+          <div class="flex items-center justify-center gap-2 sm:gap-3 mb-3 sm:mb-4">
+            <span class="text-2xl sm:text-3xl" aria-hidden="true">📍</span>
+            <p class="text-base sm:text-lg md:text-xl lg:text-2xl text-dark-blue font-serif font-bold tracking-wide break-words">
+              Balaji Garden, Narsingh Ghat, Jaisinghpura, Ujjain – 456001
+            </p>
+          </div>
+          <div class="flex items-center justify-center gap-2 sm:gap-3 flex-wrap">
+            <span class="text-2xl sm:text-3xl" aria-hidden="true">📅</span>
+            <p class="text-base sm:text-lg md:text-xl text-dark-blue font-serif font-bold">
+              Monday, 29th of Dec | 2:00 PM - 10:00 PM
+            </p>
+          </div>
+        </address>
+
+        <p class="fade-in text-sm sm:text-base md:text-lg text-dark-blue font-serif italic mb-6 sm:mb-8 px-4" style="transition-delay: 0.6s;">
+          "Let's make this day unforgettable!"
+        </p>
+      </div>
+
+      <a
+        href="https://maps.google.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="fade-in bg-gradient-to-r from-dark-blue to-red-brown text-white px-6 sm:px-8 md:px-10 py-4 sm:py-5 rounded-full text-base sm:text-lg md:text-xl shadow-2xl font-serif font-bold hover:shadow-3xl transition-all duration-300 border-2 sm:border-4 border-dark-blue relative z-10 hover:scale-110 hover:-translate-y-1 active:scale-95 mx-4"
+        style="transition-delay: 0.8s;"
+        aria-label="View party location on Google Maps"
+      >
+        📍 View Party Location
+      </a>
+    </section>
+  </main>
+
+  <!-- Scripts -->
+  <script src="./js/config.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

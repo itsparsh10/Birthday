@@ -1,0 +1,330 @@
+/* Custom Animations and Styles */
+
+/* Mobile-First Responsive Base Styles */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Responsive font sizes for very small screens */
+@media (max-width: 320px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 376px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+/* Fade In Animation */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scale In Animation */
+.scale-in {
+  opacity: 0;
+  animation: scaleIn 0.8s ease-out forwards;
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Slide Left Animation */
+.slide-left {
+  opacity: 0;
+  animation: slideLeft 0.8s ease-out forwards;
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Slide Right Animation */
+.slide-right {
+  opacity: 0;
+  animation: slideRight 0.8s ease-out forwards;
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Mobile-optimized animations - reduce movement on small screens */
+@media (max-width: 640px) {
+  @keyframes slideLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideRight {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* Hover Lift Effect */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.4);
+  border-color: rgba(26, 31, 58, 0.5);
+}
+
+/* Touch-friendly hover effects for mobile */
+@media (hover: none) and (pointer: coarse) {
+  .hover-lift:active {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .hover-scale:active {
+    transform: scale(1.02);
+  }
+}
+
+/* Hover Scale Effect */
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+/* 3D Card Styles */
+.card-3d {
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Initial state for scroll animation - card starts "closed" */
+#invitation-card {
+  transform-style: preserve-3d;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Smooth transitions for card elements */
+#invitation-card img {
+  transition: transform 0.1s ease-out, opacity 0.3s ease-out;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+#card-shadow {
+  transition: transform 0.1s ease-out, opacity 0.3s ease-out, filter 0.3s ease-out;
+  will-change: transform, opacity, filter;
+}
+
+#card-shine {
+  transition: background 0.1s ease-out, opacity 0.3s ease-out;
+  will-change: background, opacity;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Prevent text selection during drag */
+.card-3d {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Balloon animations will be handled by JavaScript */
+#balloons-container {
+  z-index: 0;
+}
+
+/* Mobile-specific optimizations */
+@media (max-width: 640px) {
+  /* Reduce balloon count on mobile for performance */
+  #balloons-container {
+    display: none; /* Hide balloons on very small screens for better performance */
+  }
+  
+  /* Optimize card shadow for mobile */
+  #card-shadow {
+    filter: blur(20px) !important;
+  }
+  
+  /* Reduce perspective for smaller screens */
+  #invitation-section {
+    perspective: 800px !important;
+  }
+  
+  /* Better touch targets */
+  a, button {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Prevent horizontal scroll */
+  body, html {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  
+  /* Optimize images */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Tablet optimizations */
+@media (min-width: 641px) and (max-width: 1024px) {
+  #balloons-container {
+    opacity: 0.8;
+  }
+}
+
+/* Small phone optimizations (iPhone SE, etc.) */
+@media (max-width: 375px) {
+  /* Further reduce font sizes */
+  .text-3xl {
+    font-size: 1.5rem;
+  }
+  
+  .text-4xl {
+    font-size: 1.875rem;
+  }
+  
+  /* Reduce padding */
+  section {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  
+  /* Smaller card on very small screens */
+  #invitation-card {
+    max-width: 95% !important;
+  }
+}
+
+/* Landscape phone optimizations */
+@media (max-height: 500px) and (orientation: landscape) {
+  section {
+    min-height: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .min-h-screen {
+    min-height: auto;
+  }
+}
+
+/* Improve touch interactions */
+@media (hover: none) and (pointer: coarse) {
+  /* Larger touch targets */
+  .hover-lift,
+  .hover-scale {
+    cursor: pointer;
+  }
+  
+  /* Remove hover effects that don't work on touch */
+  *:hover {
+    /* Keep essential hover effects but optimize for touch */
+  }
+}
+
+/* Performance optimizations for mobile */
+@media (max-width: 768px) {
+  /* Reduce animation complexity on mobile */
+  .card-3d,
+  #invitation-card {
+    will-change: transform;
+  }
+  
+  /* Optimize transitions */
+  * {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+
