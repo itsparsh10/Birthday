@@ -55,6 +55,27 @@ Simply double-click `index.html` or open it in any modern web browser (Chrome, F
 
 The website will automatically show confetti when it loads! 🎊
 
+## Deployment
+
+### GitHub Pages Deployment
+
+This website is ready to be deployed on GitHub Pages:
+
+1. **Enable GitHub Pages:**
+   - Go to your repository settings on GitHub
+   - Navigate to "Pages" in the left sidebar
+   - Under "Source", select "Deploy from a branch"
+   - Choose the `main` branch and `/ (root)` folder
+   - Click "Save"
+
+2. **Your website will be live at:**
+   - `https://itsparsh10.github.io/Birthday/`
+
+3. **Custom Domain (Optional):**
+   - You can add a custom domain in the Pages settings if desired
+
+The website is fully static and requires no build process, making it perfect for GitHub Pages deployment!
+
 ## Design Features
 
 - 🎨 Super bright gradient backgrounds
